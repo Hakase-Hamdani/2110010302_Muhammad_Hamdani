@@ -24,4 +24,49 @@ public class dataTGuru {
         AlamatGuru = new ArrayList<String>();
     }
     
+    //IdGuru
+    public void insertIdGuru(Integer isi){
+        this.IdGuru.add(isi);
+    }
+    
+    public ArrayList<Integer> getRecordIdGuru(){
+        return this.IdGuru;
+    }
+    
+    //IdTWaliKelas
+    public void insertIdTWaliKelas(Integer isi){
+        this.IdTWaliKelas.add(isi);
+    }
+    
+    public ArrayList<Integer> getRecordIdTWaliKelas(){
+        return this.IdTWaliKelas;
+    }
+    
+    //NamaGuru
+    public void insertNamaGuru(String isi){
+        this.NamaGuru.add(isi);
+    }
+    
+    public ArrayList<String> getRecordNamaGuru(){
+        return this.NamaGuru;
+    }
+    
+    //MpGuru
+    public void insertMpGuru(String isi){
+        this.MpGuru.add(isi);
+    }
+    
+    public ArrayList<String> getRecordMpGuru(){
+        return this.MpGuru;
+    }
+    
+    //AlamatGuru
+    public void insertAlamatGuru(String isi){
+        this.AlamatGuru.add(isi);
+    }
+    
+    public ArrayList<String> getRecordAlamatGuru(){
+        return this.AlamatGuru;
+    }
+    
 }
