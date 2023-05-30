@@ -10,7 +10,7 @@ package program_absensi;
  */
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class TAbsensi {

@@ -12,6 +12,10 @@ public class TUser {
     private int idAdmin;
     private String username;
     private String password;
+
+    String inputUsername = "admin";
+    String inputPassword = "admin";
+    
     
     public TUser(int idAdmin, String username, String password) {
         this.idAdmin = idAdmin;
@@ -43,13 +47,13 @@ public class TUser {
         this.password = password;
     }
     
-    public boolean login(String username, String password) {
-    if (this.username.equals(username) && this.password.equals(password)) {
-        System.out.println("Login Sukses!");
-        return true;
-    } else {
+    public boolean login() {
+    if (!this.password.equals(inputPassword) && !this.username.equals(inputUsername)) {
         System.out.println("Login Gagal!");
         return false;
+    } else {
+        System.out.println("Login Sukses!");
+        return true;
     }
 }
 
