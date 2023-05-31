@@ -12,7 +12,7 @@ import java.time.format.DateTimeFormatter;
  */
 public class dataTAbsensi {
     
-    private ArrayList <Integer> IdAbsen;
+    private ArrayList<Integer> IdAbsen;
     private ArrayList<Integer> IdTSiswa;
     private ArrayList<LocalDate> WktAbsen;
     private ArrayList<String> KetAbsen;
