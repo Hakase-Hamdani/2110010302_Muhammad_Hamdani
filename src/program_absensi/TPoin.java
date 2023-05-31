@@ -13,13 +13,15 @@ public class TPoin {
     private int IdTSiswa;
     private int IdTGuru;
     private int JmlPoin;
+    private boolean JnsPoin;
     private String KetPoin;
     
-    public TPoin(int IdPoin, int IdTSiswa, int IdTGuru, int JmlPoin, String KetPoin){
+    public TPoin(int IdPoin, int IdTSiswa, int IdTGuru, int JmlPoin, boolean jnsPoin, String KetPoin){
         this.IdPoin = IdPoin; 
         this.IdTSiswa = IdTSiswa;
         this.IdTGuru = IdTGuru;
         this.JmlPoin = JmlPoin;
+        this.JnsPoin = jnsPoin;
         this.KetPoin = KetPoin;
     }
     
@@ -50,12 +52,22 @@ public class TPoin {
         this.IdTGuru = IdTGuru;
     }
     
+    //get set jmlPoin
     public int getJmlPoin(){
         return JmlPoin;
     }
     
     public void setJmlPoin(int JmlPoin){
         this.JmlPoin = JmlPoin;
+    }
+    
+    //get set jnsPoin
+    public boolean getJnsPoin(){
+        return JnsPoin;
+    }
+    
+    public void setJnsPoin(boolean JnsPoin){
+        this.JnsPoin = JnsPoin;
     }
     
     //get set KetPoin
