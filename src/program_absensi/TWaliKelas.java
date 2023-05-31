@@ -12,15 +12,15 @@ public class TWaliKelas {
     private int IdWaliKelas;
     private String NamaWaliKelas;
     private int IdTGuru;
-    private String KelasWaliKelas;
-    private String AlamatWaliKelas;
+//    private String KelasWaliKelas;
+//    private String AlamatWaliKelas;
     
     public TWaliKelas(int IdWaliKelas, String NamaWaliKelas, int IdTGuru, String KelasWaliKelas, String AlamatWaliKelas){
         this.IdWaliKelas = IdWaliKelas; 
         this.NamaWaliKelas = NamaWaliKelas;
         this.IdTGuru = IdTGuru;
-        this.KelasWaliKelas = KelasWaliKelas;
-        this.AlamatWaliKelas = AlamatWaliKelas;
+//        this.KelasWaliKelas = KelasWaliKelas;
+//        this.AlamatWaliKelas = AlamatWaliKelas;
     }
     
     public int getIdWaliKelas(){
@@ -46,7 +46,7 @@ public class TWaliKelas {
     public void setIdTGuru(int IdTGuru){
         this.IdTGuru = IdTGuru;
     }
-    
+/*    
     public String getKelasWaliKelas(){
         return KelasWaliKelas;
     }
@@ -62,11 +62,11 @@ public class TWaliKelas {
     public void setAlamatWaliKelas(String AlamatWaliKelas){
         this.AlamatWaliKelas = AlamatWaliKelas;
     }
-
+*/
     
     public void displayTWaliKelas(){
         System.out.println("Nama" + NamaWaliKelas);
-        System.out.println("Kelas" + KelasWaliKelas);
-        System.out.println("Alamat" + KelasWaliKelas);
+//        System.out.println("Kelas" + KelasWaliKelas);
+//        System.out.println("Alamat" + KelasWaliKelas);
     }    
 }
