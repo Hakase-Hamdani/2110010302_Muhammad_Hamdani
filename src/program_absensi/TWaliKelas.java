@@ -51,7 +51,7 @@ public class TWaliKelas {
         return KelasWaliKelas;
     }
     
-    public void setKelasWaliKelas(String AlamatWaliKelas){
+    public void setKelasWaliKelas(String KelasWaliKelas){
         this.KelasWaliKelas = KelasWaliKelas;
     }
     
