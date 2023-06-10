@@ -16,6 +16,7 @@ import java.time.format.DateTimeFormatter;
 public class TAbsensi {
     private int IdAbsen;
     private int IdTSiswa;
+    private int IdTGuru;
     private LocalDate WktAbsen;
     private String KetAbsen;
     
@@ -42,6 +43,14 @@ public class TAbsensi {
         this.IdTSiswa = IdTSiswa;
     }
     
+    public int getIdTGuru(){
+        return IdTGuru;
+    }
+    
+    public void setIdTGuru(){
+        this.IdTGuru = IdTGuru;
+    }
+            
     public LocalDate getWktAbsen(){
         return WktAbsen;
     }
