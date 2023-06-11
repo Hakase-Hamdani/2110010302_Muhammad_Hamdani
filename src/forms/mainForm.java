@@ -16,8 +16,10 @@ public class mainForm extends javax.swing.JFrame {
     /**
      * Creates new form mainForm
      */
+    dataTUser dataTUserObj = new dataTUser(); //membuat objek dataTUserObj untuk memanggil insertUsername() dan insertPassword()
+    
     //dataTUser data;
-    TUser data;
+    //TUser data;
     public mainForm() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -93,14 +95,24 @@ public class mainForm extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
         menuForm MenuForm = new menuForm();
+        System.out.println("dataTUserObj instance: " + dataTUserObj);
+        dataTUserObj.insertUsername(txtUser.getText()); //ambil input dari txtUser, masukkan ke insertUsername
+        dataTUserObj.insertPassword(new String(pswdPassword.getPassword())); //ambil input dari pswdPassword, masukkan ke insertPassword
+        /* What an ass to debug
+        System.out.println("Username: " + txtUser.getText());
+        System.out.println("Password: " + new String(pswdPassword.getPassword()));
+        System.out.println("inserted usr: "+ dataTUserObj.getRecordUsername().get(0));
+        System.out.println("inserted pswd: "+ dataTUserObj.getRecordPassword().get(0));
+        System.out.println("Login() called");
+        */
         TUser TUserObj = new TUser();
-        TUserObj.setUsername(txtUser.getText());
-        TUserObj.setPassword(new String(pswdPassword.getPassword()));
-        boolean loggedIn = TUserObj.login();
+        
+        boolean loggedIn = TUserObj.login(dataTUserObj.getRecordPassword().get(0),
+                    dataTUserObj.getRecordPassword().get(0));
         if (loggedIn){
             MenuForm.setVisible(true);
         } else {
-            JOptionPane.showMessageDialog(this, "Gagal Login!");
+            JOptionPane.showMessageDialog(this, "Gagal Login");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

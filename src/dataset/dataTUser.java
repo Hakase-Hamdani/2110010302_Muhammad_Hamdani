@@ -12,20 +12,15 @@ import java.util.ArrayList;
  */
 public class dataTUser {
     private ArrayList<Integer> idAdmin;
-    private ArrayList<String> username;
-    private ArrayList<String> password;
+    public ArrayList<String> username;
+    public ArrayList<String> password;
     
     public dataTUser(){
-        idAdmin = new ArrayList<Integer>();
-        username = new ArrayList<String>();
-        password = new ArrayList<String>();
-    }
-    
-    public dataTUser(ArrayList<String> username){
+        idAdmin = new ArrayList<>();
         username = new ArrayList<>();
+        password = new ArrayList<>();
     }
-    
-    
+     
     //idAdmin
     public void insertIdAdmin(Integer isi){
         this.idAdmin.add(isi);
@@ -41,6 +36,7 @@ public class dataTUser {
     }
     
     public ArrayList<String> getRecordUsername(){
+        System.out.println("inserted Tusr: "+ username);
         return this.username;
     }
     
@@ -50,6 +46,7 @@ public class dataTUser {
     }
     
     public ArrayList<String> getRecordPassword(){
+        System.out.println("inserted Tpsws: "+ password);
         return this.password;
     }
 }

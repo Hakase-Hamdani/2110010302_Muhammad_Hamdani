@@ -15,12 +15,14 @@ public class TUser {
     private int idAdmin;
     private String username;
     private String password;
-    //membuat instance dataTUser agar bisa di akses sebagai userDataset
-    //private dataTUser userDataset = new dataTUser();
     
-    //default buat dua variable di bawah
     String defaultUsername = "admin";
     String defaultPassword = "admin";
+    //dataTUser dataTUserObj = new dataTUser();
+    
+    //String TUsrUsr = dataTUserObj.getRecordUsername().get(0);
+    //String TUsrPswd = dataTUserObj.getRecordPassword().get(0);
+    
     
     
     public TUser(int idAdmin, String username, String password) {
@@ -29,7 +31,7 @@ public class TUser {
         this.password = password;
     }
     
-    public TUser(dataTUser dataset, String username, String password) {
+    public TUser(String username, String password) {
         //this.userDataset = dataset;  //inisiasi variabel dataset 
         this.username = username;
         this.password = password;
@@ -52,6 +54,7 @@ public class TUser {
     }
     
     public String getUsername() {
+        System.out.print("getUsername "+ username);
         return username;
     }
     
@@ -63,29 +66,12 @@ public class TUser {
     public String getPassword() {
         return password;
     }
-    
-    //ArrayList<String> logUsername = userDataset.getRecordUsername();
-    //ArrayList<String> logPassword = userDataset.getRecordPassword();  
-    public boolean login() {
-        //setUsername("admin");
-        //setPassword("admin");
-        if (getUsername().equals(defaultUsername) && getPassword().equals(defaultPassword)){
-            return true;
-        } else {
-            return false;
-        }
-    }    
-    /*  ArrayList<String> logUsername = userDataset.getRecordUsername();
-        ArrayList<String> logPassword = userDataset.getRecordPassword();
-        if ((logUsername.get(0).equals(null)) && (logUsername.get(0).isEmpty()) && (logPassword.get(0).equals(null)) && (logPassword.get(0).isEmpty())){            
-            if (logUsername.get(0).equals(defaultUsername) && (logPassword.get(0).equals(defaultPassword))){            
-                return true;
-            } else {
-                return false;
-            }
-        }
-        }return false;
-    */
-    
+     
+    public boolean login(String username, String password) {
+    if ((username.equals(defaultUsername)) && password.equals(defaultPassword)){
+        return true;
+       }
+        return false;
+    }
 }
 
