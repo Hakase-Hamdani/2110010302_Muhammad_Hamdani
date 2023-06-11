@@ -4,6 +4,8 @@
  */
 package program_absensi;
 import dataset.dataTUser;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,9 +15,12 @@ public class TUser {
     private int idAdmin;
     private String username;
     private String password;
-
-    String inputUsername = "admin";
-    String inputPassword = "admin";
+    //membuat instance dataTUser agar bisa di akses sebagai userDataset
+    //private dataTUser userDataset = new dataTUser();
+    
+    //default buat dua variable di bawah
+    String defaultUsername = "admin";
+    String defaultPassword = "admin";
     
     
     public TUser(int idAdmin, String username, String password) {
@@ -23,6 +28,14 @@ public class TUser {
         this.username = username;
         this.password = password;
     }
+    
+    public TUser(dataTUser dataset, String username, String password) {
+        //this.userDataset = dataset;  //inisiasi variabel dataset 
+        this.username = username;
+        this.password = password;
+    }
+    
+    public TUser(){}
     
     //idAdmin
     public void setIdAdmin(int idAdmin) {
@@ -51,16 +64,28 @@ public class TUser {
         return password;
     }
     
-    
+    //ArrayList<String> logUsername = userDataset.getRecordUsername();
+    //ArrayList<String> logPassword = userDataset.getRecordPassword();  
     public boolean login() {
-    if (!this.password.equals(inputPassword) && !this.username.equals(inputUsername)) {
-        System.out.println("Login Gagal!");
-        return false;
-    } else {
-        System.out.println("Login Sukses!");
-        return true;
-    }
-}
-
+        //setUsername("admin");
+        //setPassword("admin");
+        if (getUsername().equals(defaultUsername) && getPassword().equals(defaultPassword)){
+            return true;
+        } else {
+            return false;
+        }
+    }    
+    /*  ArrayList<String> logUsername = userDataset.getRecordUsername();
+        ArrayList<String> logPassword = userDataset.getRecordPassword();
+        if ((logUsername.get(0).equals(null)) && (logUsername.get(0).isEmpty()) && (logPassword.get(0).equals(null)) && (logPassword.get(0).isEmpty())){            
+            if (logUsername.get(0).equals(defaultUsername) && (logPassword.get(0).equals(defaultPassword))){            
+                return true;
+            } else {
+                return false;
+            }
+        }
+        }return false;
+    */
+    
 }
 

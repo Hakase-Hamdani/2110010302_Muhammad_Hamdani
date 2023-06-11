@@ -21,6 +21,11 @@ public class dataTUser {
         password = new ArrayList<String>();
     }
     
+    public dataTUser(ArrayList<String> username){
+        username = new ArrayList<>();
+    }
+    
+    
     //idAdmin
     public void insertIdAdmin(Integer isi){
         this.idAdmin.add(isi);

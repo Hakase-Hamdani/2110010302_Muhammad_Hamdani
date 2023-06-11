@@ -4,6 +4,8 @@
  */
 package forms;
 import dataset.dataTUser;
+import program_absensi.TUser;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -14,11 +16,12 @@ public class mainForm extends javax.swing.JFrame {
     /**
      * Creates new form mainForm
      */
-    dataTUser data;
+    //dataTUser data;
+    TUser data;
     public mainForm() {
         initComponents();
         this.setLocationRelativeTo(null);
-        data = new dataTUser();
+        //data = new dataTUser();
     }
 
     /**
@@ -88,9 +91,17 @@ public class mainForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        data.insertUsername(txtUser.getText());
-        data.insertPassword(new String(pswdPassword.getPassword()));
+        
+        menuForm MenuForm = new menuForm();
+        TUser TUserObj = new TUser();
+        TUserObj.setUsername(txtUser.getText());
+        TUserObj.setPassword(new String(pswdPassword.getPassword()));
+        boolean loggedIn = TUserObj.login();
+        if (loggedIn){
+            MenuForm.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(this, "Gagal Login!");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
