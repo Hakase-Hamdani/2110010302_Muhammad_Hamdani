@@ -15,8 +15,8 @@ public class dataTWaliKelas {
     private ArrayList<String> NamaWaliKelas;
     private ArrayList<Integer> IdTGuru;
     
-    public dataTUser(){
-        idWaliKelas = new ArrayList<Integer>();
+    public dataTWaliKelas(){
+        IdWaliKelas = new ArrayList<Integer>();
         NamaWaliKelas = new ArrayList<String>();
         IdTGuru = new ArrayList<Integer>();
     }

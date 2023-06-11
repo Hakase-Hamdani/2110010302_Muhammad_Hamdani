@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public class dataTGuru {
     
     private ArrayList<Integer> IdGuru;
+    private ArrayList<Integer> IdTUser;
     private ArrayList<Integer> IdTWaliKelas;
     private ArrayList<String> NamaGuru;
     private ArrayList<String> MpGuru;
@@ -18,6 +19,7 @@ public class dataTGuru {
     
     public dataTGuru(){
         IdGuru = new ArrayList<Integer>();
+        IdTUser = new ArrayList<Integer>();
         IdTWaliKelas = new ArrayList<Integer>();
         NamaGuru = new ArrayList<String>();
         MpGuru = new ArrayList<String>();
@@ -31,6 +33,15 @@ public class dataTGuru {
     
     public ArrayList<Integer> getRecordIdGuru(){
         return this.IdGuru;
+    }
+    
+    //IdTUser
+    public void insertIdTUser(Integer isi){
+        this.IdTUser.add(isi);
+    }
+    
+    public ArrayList<Integer> getRecordIdTUser(){
+        return this.IdTUser;
     }
     
     //IdTWaliKelas

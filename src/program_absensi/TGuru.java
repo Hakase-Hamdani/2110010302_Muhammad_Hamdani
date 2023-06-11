@@ -11,6 +11,7 @@ package program_absensi;
 public class TGuru {
     
     private int IdGuru;
+    private int IdTUser;
     private int IdTWaliKelas;
     private String NamaGuru;
     private String MpGuru;
@@ -23,14 +24,16 @@ public class TGuru {
     this.ketAbsensi = ketAbsensi; //tempat lahir
    */
     
-    public TGuru(int IdGuru, int IdTWaliKelas, String NamaGuru, String MpGuru, String AlamatGuru){
+    public TGuru(int IdGuru, int IdTUser, int IdTWaliKelas, String NamaGuru, String MpGuru, String AlamatGuru){
         this.IdGuru = IdGuru; 
+        this.IdTUser = IdTUser;
         this.IdTWaliKelas= IdTWaliKelas;
         this.NamaGuru = NamaGuru;
         this.MpGuru = MpGuru;
         this.AlamatGuru = AlamatGuru;
     }
     
+    //IdGuru
     public int getIdGuru(){
         return IdGuru;
     }
@@ -39,6 +42,16 @@ public class TGuru {
         this.IdGuru = IdGuru;
     }
     
+    //IdUser
+    public int getIdTUser(){
+        return IdTUser;
+    }
+    
+    public void setIdTUser(int IdTUser){
+        this.IdTUser = IdTUser;
+    }
+    
+    //IdTWaliKelas
     public int getIdTWaliKelas(){
         return IdTWaliKelas;
     }
@@ -47,6 +60,8 @@ public class TGuru {
         this.IdTWaliKelas = IdTWaliKelas;
     }
     
+    
+    //NamGuru
     public String getNamaGuru(){
         return NamaGuru;
     }
@@ -55,6 +70,7 @@ public class TGuru {
         this.NamaGuru = NamaGuru;
     }
     
+    //MpGuru
     public String getMpGuru(){
         return MpGuru;
     }
@@ -63,6 +79,7 @@ public class TGuru {
         this.MpGuru = MpGuru;
     }
     
+    //AlamatGuru
     public String getAlamatGuru(){
         return AlamatGuru;
     }
