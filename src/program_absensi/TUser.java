@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package program_absensi;
+import dataset.dataTUser;
 
 /**
  *
@@ -23,29 +24,33 @@ public class TUser {
         this.password = password;
     }
     
+    //idAdmin
+    public void setIdAdmin(int idAdmin) {
+        this.idAdmin = idAdmin;
+    }
+    
     public int getIdAdmin() {
         return idAdmin;
     }
     
-    public void setIdAdmin(int idAdmin) {
-        this.idAdmin = idAdmin;
+    //username
+    public void setUsername(String username) {
+        this.username = username;
     }
     
     public String getUsername() {
         return username;
     }
     
-    public void setUsername(String username) {
-        this.username = username;
+    //password
+    public void setPassword(String password) {
+        this.password = password;
     }
     
     public String getPassword() {
         return password;
     }
     
-    public void setPassword(String password) {
-        this.password = password;
-    }
     
     public boolean login() {
     if (!this.password.equals(inputPassword) && !this.username.equals(inputUsername)) {
