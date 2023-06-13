@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class dataTPoin {
     private ArrayList<Integer> IdPoin;
-    private ArrayList<Integer> IdTSiswa;
+    private ArrayList<String> IdTSiswa;
     private ArrayList<Integer> IdTGuru;
     private ArrayList<Integer> JmlPoin;
     private ArrayList<Boolean> JnsPoin;
@@ -20,7 +20,7 @@ public class dataTPoin {
     
     public dataTPoin(){
         IdPoin = new ArrayList<Integer>();
-        IdTSiswa = new ArrayList<Integer>();
+        IdTSiswa = new ArrayList<>();
         IdTGuru = new ArrayList<Integer>();
         JmlPoin = new ArrayList<Integer>();
         JnsPoin = new ArrayList<Boolean>();
@@ -37,11 +37,11 @@ public class dataTPoin {
     }
     
     //IdTSiswa
-    public void insertIdTSiswa(Integer isi){
+    public void insertIdTSiswa(String isi){
         this.IdTSiswa.add(isi);
     }
     
-    public ArrayList<Integer> getRecordIdTSiswa(){
+    public ArrayList<String> getRecordIdTSiswa(){
         return this.IdTSiswa;
     }
     
