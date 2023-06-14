@@ -5,3 +5,6 @@ Di upload untuk memenuhi UTS mata kuliah Pemrograman Berbasis Objek 1, Jurusan T
 Please check the commit history, the branch, and the comments from the commit history and pull request history. It documented my descent into insanity as i coded this (as you can see on my current profic lol)
 
 berdasarkan dari https://journal.trunojoyo.ac.id/edutic/article/view/3971
+
+**Bagi Dosen yang terhormat yang memeriksa repo ini:**
+>Branch [main](https://github.com/Hakase-Hamdani/HamdaniPBO-Absensi/tree/main) saat ini di hiatuskan, cek branch [absolute_dumbo](https://github.com/Hakase-Hamdani/HamdaniPBO-Absensi/tree/absolute_dumbo) untuk commit terkini. [absolute_dumbo](https://github.com/Hakase-Hamdani/HamdaniPBO-Absensi/tree/absolute_dumbo) di branching dari [user_forms_and_stuff](https://github.com/Hakase-Hamdani/HamdaniPBO-Absensi/tree/user_forms_and_stuff)
