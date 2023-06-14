@@ -57,6 +57,11 @@ public class menuForm extends javax.swing.JFrame {
         jButton4.setText("Absensi");
 
         jButton5.setText("Guru");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("Wali Kelas");
 
@@ -108,13 +113,19 @@ public class menuForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        formSiswa formSiswa = new formSiswa();
+        formSiswa.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnPoinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPoinActionPerformed
         poinForm poinForm = new poinForm();
         poinForm.setVisible(true);
     }//GEN-LAST:event_btnPoinActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        formGuru formGuru = new formGuru();
+        formGuru.setVisible(true);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments

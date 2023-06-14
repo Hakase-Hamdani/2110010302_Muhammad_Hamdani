@@ -97,9 +97,9 @@ public class poinForm extends javax.swing.JFrame {
                                     .addGap(18, 18, 18)
                                     .addComponent(txtIndex, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(txtPoin, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,7 +145,7 @@ public class poinForm extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         txtAreaOutput.setText("");
-        txtAreaOutput.append("Nama\tPoin\tStatus\n");
+        txtAreaOutput.append("Nama\t\tPoin\t\tStatus\n");
         String finalStatus;
         /*
         int i = Integer.valueOf(txtIndex.getText());   
@@ -169,8 +169,8 @@ public class poinForm extends javax.swing.JFrame {
                 finalStatus = "Lulus";
             }
             String isiLengkap = data.getRecordIdTSiswa().get(a)+
-                            "\t" +data.getRecordJmlPoin().get(a)+
-                            "\t" +finalStatus;
+                            "\t\t" +data.getRecordJmlPoin().get(a)+
+                            "\t\t" +finalStatus;
             txtAreaOutput.append(isiLengkap+"\n");
         }
     }//GEN-LAST:event_jButton1ActionPerformed

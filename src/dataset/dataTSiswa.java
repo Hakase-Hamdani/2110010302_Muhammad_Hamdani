@@ -5,7 +5,6 @@
 package dataset;
 
 import java.util.ArrayList;
-import java.time.LocalDate;
 
 /**
  *
@@ -16,7 +15,7 @@ public class dataTSiswa {
     private ArrayList<String> namaSiswa;
     private ArrayList<Boolean> jkSiswa;
     private ArrayList<String> tlSiswa;
-    private ArrayList<LocalDate> tgllSiswa;
+    private ArrayList<String> tgllSiswa;
     private ArrayList<String> AlamatSiswa;
     
     public dataTSiswa(){
@@ -24,7 +23,7 @@ public class dataTSiswa {
         namaSiswa = new ArrayList<String>();
         jkSiswa = new ArrayList<Boolean>();
         tlSiswa = new ArrayList<String>();
-        tgllSiswa = new ArrayList<LocalDate>();
+        tgllSiswa = new ArrayList<>();
         AlamatSiswa = new ArrayList<String>();
     }
     
@@ -65,11 +64,11 @@ public class dataTSiswa {
     }
     
     //tgllSiswa
-    public void inserttgllSiswa(LocalDate isi){
+    public void inserttgllSiswa(String isi){
         this.tgllSiswa.add(isi);
     }
     
-    public ArrayList<LocalDate> getRecordtgllSiswa(){
+    public ArrayList<String> getRecordtgllSiswa(){
         return this.tgllSiswa;
     }
     
